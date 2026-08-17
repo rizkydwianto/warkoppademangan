@@ -1,0 +1,143 @@
+/* ===== TESTIMONIAL.CSS ===== */
+
+#testimonial {
+  padding: var(--section-py) 0;
+  background: var(--espresso);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kutip dekoratif latar */
+#testimonial::before {
+  content: '\201C';
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  font-size: 22rem;
+  color: rgba(212,163,115,.04);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Lingkaran dekoratif */
+#testimonial::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,163,115,.06);
+  right: -150px;
+  bottom: -150px;
+  pointer-events: none;
+}
+
+.testi-header {
+  text-align: center;
+  margin-bottom: 52px;
+  position: relative;
+  z-index: 1;
+}
+
+.testi-header .section-title { color: var(--white); }
+.testi-header .section-sub   { color: rgba(255,255,255,.55); }
+.testi-header .about-label   { color: var(--latte); }
+
+/* ---- Grid ---- */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Card ---- */
+.testi-card {
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(212,163,115,.13);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.testi-card:hover {
+  background: rgba(255,255,255,.1);
+  transform: translateY(-5px);
+  border-color: rgba(212,163,115,.28);
+  box-shadow: 0 12px 36px rgba(0,0,0,.2);
+}
+
+/* Bintang */
+.testi-stars {
+  font-size: .95rem;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* Teks ulasan */
+.testi-text {
+  color: rgba(255,255,255,.78);
+  font-size: .88rem;
+  line-height: 1.8;
+  margin-bottom: 22px;
+  font-style: italic;
+  flex: 1;
+  position: relative;
+  padding-left: 14px;
+}
+
+.testi-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--latte), var(--accent));
+  border-radius: 2px;
+}
+
+/* Author */
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.testi-avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--latte), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.testi-name {
+  font-weight: 700;
+  color: var(--latte);
+  font-size: .87rem;
+  display: block;
+  line-height: 1.3;
+}
+
+.testi-role {
+  font-size: .76rem;
+  color: rgba(255,255,255,.45);
+  margin-top: 2px;
+  display: block;
+}

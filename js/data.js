@@ -1,0 +1,116 @@
+/**
+ * DATA.JS
+ * Berisi semua data produk menu Warkop Pademangan.
+ * Untuk menambah menu, cukup tambahkan objek baru di array menuItems.
+ */
+
+const menuItems = [
+  {
+    id: 1,
+    name: "Kopi Hitam",
+    desc: "Kopi tubruk tradisional, pekat dan kaya rasa. Favorit pelanggan setia warkop.",
+    price: 8000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 2,
+    name: "Espresso",
+    desc: "Shot espresso murni, bold dan intens. Cocok untuk yang butuh energi cepat.",
+    price: 15000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 3,
+    name: "Kopi Susu",
+    desc: "Perpaduan espresso dan susu segar yang creamy. Manis gurih, cocok pagi hari.",
+    price: 13000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 4,
+    name: "Iced Americano",
+    desc: "Espresso dingin dengan es batu dan air. Segar dan tidak terlalu pekat.",
+    price: 18000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 5,
+    name: "Caramel Latte",
+    desc: "Latte premium dengan siraman karamel manis. Lembut di tenggorokan, indulge banget.",
+    price: 22000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 6,
+    name: "Hazelnut Cappuccino",
+    desc: "Cappuccino klasik dengan aroma hazelnut yang menggoda. Foam susu tebal di atasnya.",
+    price: 24000,
+    category: "kopi",
+    badge: "Kopi",
+    img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 7,
+    name: "Es Teh Tarik",
+    desc: "Teh hitam pekat yang ditarik sempurna dengan susu. Manis creamy khas warkop.",
+    price: 10000,
+    category: "nonkopi",
+    badge: "Non-Kopi",
+    img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 8,
+    name: "Coklat Panas",
+    desc: "Hot chocolate rich dengan coklat premium. Cocok menemani sore yang hujan.",
+    price: 17000,
+    category: "nonkopi",
+    badge: "Non-Kopi",
+    img: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 9,
+    name: "Jus Alpukat",
+    desc: "Alpukat segar blended dengan susu dan sedikit coklat. Tebal, creamy, menyegarkan.",
+    price: 20000,
+    category: "nonkopi",
+    badge: "Non-Kopi",
+    img: "https://images.unsplash.com/photo-1638176066959-7cf6d4c8a04f?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 10,
+    name: "Nasi Goreng Spesial",
+    desc: "Nasi goreng warkop dengan telur, ayam, acar, dan kerupuk. Porsi gede, harga ramah.",
+    price: 25000,
+    category: "makanan",
+    badge: "Makanan",
+    img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 11,
+    name: "Roti Bakar Coklat",
+    desc: "Roti tawar dibakar garing dengan selai coklat dan meses. Sarapan atau camilan sempurna.",
+    price: 12000,
+    category: "makanan",
+    badge: "Makanan",
+    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    id: 12,
+    name: "Mie Goreng Jumbo",
+    desc: "Mie goreng telur dengan topping sayur, bakso, dan saus spesial warkop.",
+    price: 22000,
+    category: "makanan",
+    badge: "Makanan",
+    img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&auto=format&fit=crop&q=80"
+  }
+];

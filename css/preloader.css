@@ -1,0 +1,64 @@
+/* ===== PRELOADER.CSS ===== */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: var(--espresso);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .5s ease, visibility .5s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader-inner { text-align: center; }
+
+.preloader-cup {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 14px;
+  animation: cupBounce 1s ease-in-out infinite;
+}
+
+.preloader-text {
+  color: var(--latte);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Progress bar */
+.preloader-bar {
+  width: 160px;
+  height: 3px;
+  background: rgba(212,163,115,.18);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.preloader-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--latte), var(--accent));
+  border-radius: 10px;
+  animation: barFill 1.4s ease forwards;
+}
+
+@keyframes cupBounce {
+  0%,100% { transform: translateY(0)  scale(1); }
+  50%      { transform: translateY(-10px) scale(1.1); }
+}
+
+@keyframes barFill {
+  from { width: 0; }
+  to   { width: 100%; }
+}

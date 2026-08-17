@@ -1,0 +1,245 @@
+/* ===== RESPONSIVE.CSS ===== */
+
+/* ============================================================
+   LARGE DESKTOP — max-width: 1280px
+   ============================================================ */
+@media (max-width: 1280px) {
+  .hero-image-wrap img {
+    width: 320px;
+    height: 320px;
+  }
+  .hero-image-wrap::before {
+    width: 370px;
+    height: 370px;
+  }
+}
+
+/* ============================================================
+   TABLET LANDSCAPE — max-width: 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* Hero — satu kolom, tengah */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-content  { max-width: 100%; }
+  .hero-desc     { margin-left: auto; margin-right: auto; }
+  .hero-cta      { justify-content: center; }
+  .hero-stats    { justify-content: center; }
+  .hero-image-wrap { display: none; }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .about-img-wrap img { height: 360px; }
+  .about-badge-img {
+    bottom: -18px;
+    right: 18px;
+  }
+  .about-content { padding-left: 0; }
+
+  /* Menu — 2 kolom di tablet */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Promo grid */
+  .promo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .promo-card--big {
+    grid-column: 1 / -1;
+  }
+
+  /* Testimonial — 2 kolom */
+  .testi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Contact — satu kolom */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .contact-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Footer — 2 kolom */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ============================================================
+   TABLET PORTRAIT — max-width: 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* ---- Navbar: hamburger menu ---- */
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--espresso);
+    flex-direction: column;
+    padding: 20px 24px 28px;
+    gap: 0;
+    transform: translateY(-110%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .35s ease, opacity .3s ease, visibility .3s ease;
+    border-bottom: 2px solid rgba(212,163,115,.15);
+    z-index: 999;
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  }
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-links li { width: 100%; }
+  .nav-links a {
+    display: block;
+    font-size: .95rem;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+    color: rgba(255,255,255,.85);
+  }
+  .nav-links li:last-child a { border-bottom: none; }
+  .nav-links a::after { display: none; }
+  .hamburger { display: flex; }
+
+  /* ---- Hero ---- */
+  #hero { padding: 90px 0 56px; }
+  .hero-title  { font-size: 1.95rem; }
+  .hero-desc   { font-size: .9rem; max-width: 100%; }
+  .hero-stats  { gap: 20px; }
+  .stat-num    { font-size: 1.55rem; }
+  .stat-label  { font-size: .7rem; }
+
+  /* ---- About ---- */
+  .about-img-wrap img { height: 260px; }
+  .about-badge-img {
+    position: static;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 14px 20px;
+    border-radius: var(--radius-sm);
+  }
+  .about-badge-img strong { font-size: 1.6rem; }
+
+  /* ---- Menu — 1 kolom di mobile ---- */
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-btns { gap: 8px; }
+  .filter-btn  { padding: 8px 16px; font-size: .79rem; }
+
+  /* ---- Promo banner ---- */
+  .promo-track { animation-duration: 20s; }
+
+  /* ---- Promo section ---- */
+  .promo-grid { grid-template-columns: 1fr; }
+  .promo-card--big { grid-column: auto; }
+
+  /* ---- Testimonial ---- */
+  .testi-grid { grid-template-columns: 1fr; }
+
+  /* ---- Contact ---- */
+  .contact-info { grid-template-columns: 1fr; }
+  .contact-form { padding: 24px 20px; }
+
+  /* ---- Footer ---- */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-brand { grid-column: auto; }
+
+  /* ---- Cart sidebar full width ---- */
+  #cart-sidebar {
+    width: 100vw;
+    right: -100vw;
+  }
+
+  /* ---- Checkout modal ---- */
+  .checkout-modal-box { padding: 28px 20px; }
+  .checkout-modal-actions { flex-direction: column; }
+
+  /* ---- Toast full width ---- */
+  #toast {
+    width: calc(100% - 32px);
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ---- Back to top ---- */
+  #back-to-top {
+    bottom: 76px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* ============================================================
+   MOBILE KECIL — max-width: 480px
+   ============================================================ */
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+
+  #hero, #about, #menu, #promo, #testimonial, #contact {
+    padding: 68px 0 60px;
+  }
+
+  .hero-title    { font-size: 1.7rem; }
+  .section-title { font-size: 1.4rem; }
+
+  .btn { padding: 11px 20px; font-size: .84rem; }
+  .hero-cta { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero-cta .btn { justify-content: center; }
+
+  .hero-stats { flex-direction: row; justify-content: space-around; }
+  .stat-num   { font-size: 1.4rem; }
+
+  .about-img-wrap img { height: 220px; }
+
+  .menu-card-img { height: 180px; }
+
+  .filter-btn { padding: 7px 14px; font-size: .76rem; }
+
+  .promo-card-body { padding: 16px; }
+  .promo-card-body h3 { font-size: .95rem; }
+
+  .testi-card { padding: 20px; }
+
+  .contact-form { padding: 18px 16px; }
+
+  .checkout-modal-box { padding: 22px 14px; }
+
+  #toast { font-size: .8rem; padding: 11px 18px; }
+}
+
+/* ============================================================
+   MOBILE SANGAT KECIL — max-width: 360px
+   ============================================================ */
+@media (max-width: 360px) {
+  .logo { font-size: 1.05rem; }
+  #cart-btn { padding: 8px 12px; font-size: .76rem; }
+  #cart-btn span:first-child { display: none; } /* sembunyikan teks "Keranjang", tampilkan ikon saja */
+}

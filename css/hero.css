@@ -1,0 +1,170 @@
+/* ===== HERO.CSS ===== */
+
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1a0f0a 0%, var(--espresso) 45%, #3d2a1e 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 60px;
+}
+
+/* Foto latar bg */
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1600&auto=format&fit=crop&q=55')
+    center / cover no-repeat;
+  opacity: .1;
+  pointer-events: none;
+}
+
+/* Lingkaran dekorasi kanan */
+#hero::after {
+  content: '';
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 1px solid rgba(212,163,115,.08);
+  right: -180px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* ---- Grid Layout ---- */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* ---- Konten Kiri ---- */
+.hero-content { max-width: 580px; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212,163,115,.1);
+  border: 1px solid rgba(212,163,115,.25);
+  color: var(--latte);
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: .77rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.hero-badge::before { content: '☕'; font-style: normal; }
+
+.hero-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.12;
+  color: var(--white);
+  margin-bottom: 18px;
+}
+.hero-title span { color: var(--latte); }
+
+.hero-desc {
+  color: rgba(255,255,255,.7);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 34px;
+  max-width: 480px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ---- Stats ---- */
+.hero-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 50px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  flex-wrap: wrap;
+}
+
+.stat-item { text-align: center; }
+
+.stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--latte);
+  line-height: 1;
+  display: block;
+}
+
+.stat-label {
+  font-size: .73rem;
+  color: rgba(255,255,255,.5);
+  margin-top: 5px;
+  letter-spacing: .3px;
+  display: block;
+}
+
+/* ---- Gambar Kanan ---- */
+.hero-image-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lingkaran luar bergaris */
+.hero-image-wrap::before {
+  content: '';
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: rgba(212,163,115,.06);
+  border: 2px solid rgba(212,163,115,.14);
+  animation: pulseRing 3s ease-in-out infinite;
+}
+
+.hero-image-wrap img {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 24px 70px rgba(0,0,0,.45);
+  border: 5px solid rgba(212,163,115,.22);
+}
+
+/* Elemen mengambang dekoratif */
+.hero-image-wrap::after {
+  content: '☕';
+  position: absolute;
+  top: 8%;
+  right: 4%;
+  font-size: 2rem;
+  animation: floatAnim 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.3));
+}
+
+@keyframes pulseRing {
+  0%,100% { transform: scale(1);   opacity: 1; }
+  50%      { transform: scale(1.04); opacity: .7; }
+}
+
+@keyframes floatAnim {
+  0%,100% { transform: translateY(0)     rotate(0deg); }
+  50%      { transform: translateY(-12px) rotate(8deg); }
+}

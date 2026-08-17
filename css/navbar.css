@@ -1,0 +1,152 @@
+/* ===== NAVBAR.CSS ===== */
+
+#navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(44,30,22,.97);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 16px 0;
+  transition: padding .3s ease, box-shadow .3s ease;
+}
+
+#navbar.scrolled {
+  padding: 11px 0;
+  box-shadow: 0 4px 28px rgba(0,0,0,.28);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ---- Logo ---- */
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--latte);
+  letter-spacing: .2px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.logo span { color: var(--accent); }
+
+/* ---- Nav Links ---- */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: rgba(255,255,255,.75);
+  font-weight: 500;
+  font-size: .875rem;
+  transition: color .25s ease;
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--latte);
+  border-radius: 2px;
+  transition: width .3s ease;
+}
+
+.nav-links a:hover       { color: var(--latte); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-links a.active       { color: var(--latte); font-weight: 600; }
+.nav-links a.active::after { width: 100%; }
+
+/* ---- Nav Right ---- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* ---- Cart Button ---- */
+#cart-btn {
+  background: var(--accent);
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 50px;
+  padding: 9px 18px;
+  font-size: .83rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+#cart-btn:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(224,122,95,.42);
+}
+
+#cart-count {
+  background: var(--latte);
+  color: var(--espresso);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .68rem;
+  font-weight: 800;
+  line-height: 1;
+  transition: transform .25s ease;
+}
+
+#cart-count.pop {
+  animation: badgePop .3s ease;
+}
+
+@keyframes badgePop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.6); }
+  100% { transform: scale(1); }
+}
+
+/* ---- Hamburger ---- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: var(--radius-xs);
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition);
+  display: block;
+  transform-origin: center;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }

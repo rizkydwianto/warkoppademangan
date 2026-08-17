@@ -1,0 +1,177 @@
+/* ===== MENU.CSS ===== */
+
+#menu {
+  padding: var(--section-py) 0;
+  background: var(--white);
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ---- Filter ---- */
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  padding: 9px 24px;
+  border-radius: 50px;
+  font-size: .84rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid rgba(212,163,115,.4);
+  background: transparent;
+  color: var(--espresso);
+  transition: var(--transition);
+  user-select: none;
+}
+
+.filter-btn:hover {
+  border-color: var(--latte);
+  background: rgba(212,163,115,.08);
+}
+
+.filter-btn.active {
+  background: var(--latte);
+  border-color: var(--latte);
+  color: var(--espresso);
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(212,163,115,.35);
+}
+
+/* ---- Grid ---- */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  gap: 26px;
+}
+
+/* ---- Card ---- */
+.menu-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  border: 1px solid rgba(212,163,115,.13);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.menu-card.hidden {
+  display: none;
+}
+
+/* Gambar */
+.menu-card-img {
+  position: relative;
+  overflow: hidden;
+  height: 208px;
+  flex-shrink: 0;
+}
+
+.menu-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s ease;
+}
+
+.menu-card:hover .menu-card-img img {
+  transform: scale(1.09);
+}
+
+/* Badge kategori */
+.menu-card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--accent);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+/* Body */
+.menu-card-body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menu-card-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--espresso);
+}
+
+.menu-card-desc {
+  font-size: .8rem;
+  color: var(--gray);
+  line-height: 1.65;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.menu-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.menu-card-price {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Tombol Tambah */
+.add-to-cart {
+  background: var(--espresso);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  padding: 9px 16px;
+  border-radius: 50px;
+  font-size: .78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-bounce);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.add-to-cart:hover:not(:disabled) {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(224,122,95,.38);
+}
+
+.add-to-cart:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+  transform: none;
+}

@@ -1,0 +1,37 @@
+ <!-- Tester membuat pesanan CS -->
+      <div class="form-container">
+        <form action="" id="checkoutForm">
+          <h3>Formulir Checkout</h3>
+          <div class="form-group">
+            <label for="customerName">Nama Pelanggan</label>
+            <input
+              type="text"
+              id="customerName"
+              name="customerName"
+              placeholder="Nama lengkap"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="customerPhone">No. Telepon / WhatsApp</label>
+            <input
+              type="tel"
+              id="customerPhone"
+              name="customerPhone"
+              placeholder="08xx-xxxx-xxxx"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="customerAddress">Alamat Pengiriman</label>
+            <textarea
+              id="customerAddress"
+              name="customerAddress"
+              rows="4"
+              placeholder="Alamat lengkap untuk pengiriman"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+        </form>
+      </div>

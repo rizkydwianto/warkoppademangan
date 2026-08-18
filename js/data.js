@@ -12,7 +12,7 @@ const menuItems = [
     price: 8000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const menuItems = [
     price: 15000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const menuItems = [
     price: 13000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const menuItems = [
     price: 18000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const menuItems = [
     price: 22000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1587080413959-06b859fb107d?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const menuItems = [
     price: 24000,
     category: "kopi",
     badge: "Kopi",
-    img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const menuItems = [
     price: 10000,
     category: "nonkopi",
     badge: "Non-Kopi",
-    img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 8,
@@ -75,7 +75,7 @@ const menuItems = [
     price: 17000,
     category: "nonkopi",
     badge: "Non-Kopi",
-    img: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 9,
@@ -84,7 +84,7 @@ const menuItems = [
     price: 20000,
     category: "nonkopi",
     badge: "Non-Kopi",
-    img: "https://images.unsplash.com/photo-1638176066959-7cf6d4c8a04f?w=400&auto=format&fit=crop&q=80"
+    img: "imgmenu/jusalpukat.jpg",
   },
   {
     id: 10,
@@ -93,7 +93,7 @@ const menuItems = [
     price: 25000,
     category: "makanan",
     badge: "Makanan",
-    img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 11,
@@ -102,7 +102,7 @@ const menuItems = [
     price: 12000,
     category: "makanan",
     badge: "Makanan",
-    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&auto=format&fit=crop&q=80"
+    img: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&auto=format&fit=crop&q=80",
   },
   {
     id: 12,
@@ -111,6 +111,15 @@ const menuItems = [
     price: 22000,
     category: "makanan",
     badge: "Makanan",
-    img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&auto=format&fit=crop&q=80"
-  }
+    img: "https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&auto=format&fit=crop&q=80",
+  },
+  {
+    id: 13,
+    name: "Pisang Goreng Unyu",
+    desc: "Pisang manis dan lembut dibalut adonan renyah, digoreng hingga keemasan. Cocok dinikmati hangat sebagai teman ngopi atau ngobrol santai.",
+    price: 25000,
+    category: "makanan",
+    badge: "Makanan",
+    img: "imgmenu/pisanggorenglihay.png",
+  },
 ];

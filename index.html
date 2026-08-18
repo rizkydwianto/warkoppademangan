@@ -1,415 +1,860 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Warkop Pademangan – Kopi Sejati, Suasana Asri</title>
-  <meta name="description" content="Warkop Pademangan, tempat ngopi asik di Pademangan dengan menu kopi pilihan dan suasana hangat."/>
-  <meta name="theme-color" content="#2C1E16"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <title>Warkop Pademangan – Kopi Sejati, Suasana Asri</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/base.css"/>
-  <link rel="stylesheet" href="css/preloader.css"/>
-  <link rel="stylesheet" href="css/navbar.css"/>
-  <link rel="stylesheet" href="css/hero.css"/>
-  <link rel="stylesheet" href="css/promo.css"/>
-  <link rel="stylesheet" href="css/about.css"/>
-  <link rel="stylesheet" href="css/menu.css"/>
-  <link rel="stylesheet" href="css/testimonial.css"/>
-  <link rel="stylesheet" href="css/cart.css"/>
-  <link rel="stylesheet" href="css/contact.css"/>
-  <link rel="stylesheet" href="css/footer.css"/>
-  <link rel="stylesheet" href="css/responsive.css"/>
-</head>
-<body>
+    <meta
+      name="description"
+      content="Warkop Pademangan, tempat ngopi asik di Pademangan dengan menu kopi pilihan dan suasana hangat."
+    />
 
-  <!-- ===== PRELOADER ===== -->
-  <div id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-cup">☕</div>
-      <div class="preloader-text">Warkop Pademangan</div>
-      <div class="preloader-bar"><div class="preloader-fill"></div></div>
-    </div>
-  </div>
+    <meta name="theme-color" content="#2C1E16" />
 
-  <!-- ===== NAVBAR ===== -->
-  <nav id="navbar" role="navigation" aria-label="Navigasi utama">
-    <div class="container nav-inner">
-      <a href="#hero" class="logo" aria-label="Warkop Pademangan - ke halaman utama">
-        Warkop <span>Pademangan</span>
-      </a>
-      <ul class="nav-links" id="nav-links" role="menubar">
-        <li role="none"><a href="#hero"    role="menuitem">Home</a></li>
-        <li role="none"><a href="#about"   role="menuitem">About</a></li>
-        <li role="none"><a href="#menu"    role="menuitem">Menu</a></li>
-        <li role="none"><a href="#promo"   role="menuitem">Promo</a></li>
-        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <button id="cart-btn" aria-label="Buka keranjang belanja">
-          🛒 Keranjang
-          <span id="cart-count" style="display:none;">0</span>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu navigasi" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
+    <!-- ========================================
+         GOOGLE FONTS
+    ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- ===== HERO ===== -->
-  <section id="hero" aria-label="Hero section">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">Warkop Legendaris Pademangan</div>
-        <h1 class="hero-title">
-          Setiap Tegukan <span>Menghangatkan</span> Jiwa
-        </h1>
-        <p class="hero-desc">
-          Nikmati cita rasa kopi pilihan dengan suasana hangat khas warkop.
-          Dari robusta pekat hingga latte lembut — semua ada di sini, harga kawan.
-        </p>
-        <div class="hero-cta">
-          <a href="#menu" class="btn btn-primary">☕ Pesan Sekarang</a>
-          <a href="#about" class="btn btn-outline">Tentang Kami</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-num">12+</div>
-            <div class="stat-label">Varian Menu</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">500+</div>
-            <div class="stat-label">Pelanggan/Hari</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Tahun Berdiri</div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-image-wrap" aria-hidden="true">
-        <img
-          src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=80"
-          alt="Secangkir kopi Warkop Pademangan"
-          width="380" height="380"
-        />
-      </div>
-    </div>
-  </section>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ===== PROMO BANNER (marquee) ===== -->
-  <div id="promo-banner" aria-label="Promo hari ini" role="marquee">
-    <div class="promo-track">
-      <span>🔥 Promo Hari Ini</span>
-      <span>☕ Kopi Hitam Rp 8.000</span>
-      <span>🎉 Buy 2 Get 1 Roti Bakar</span>
-      <span>⭐ Diskon 20% Kopi Susu Senin-Rabu</span>
-      <span>🍜 Mie Goreng + Kopi Cuma Rp 27.000</span>
-      <span>📱 Follow IG kami untuk promo eksklusif</span>
-    </div>
-  </div>
+    <!-- ========================================
+         CSS
+    ========================================= -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/promo.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" aria-label="Tentang kami">
-    <div class="container about-grid">
-      <div class="about-img-wrap">
-        <img
-          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&auto=format&fit=crop&q=80"
-          alt="Suasana dalam Warkop Pademangan"
-          loading="lazy"
-          width="700" height="480"
-        />
-        <div class="about-badge-img">
-          <strong>2026</strong>
-          <span>Berdiri</span>
-        </div>
-      </div>
-      <div class="about-content">
-        <p class="about-label">Tentang Kami</p>
-        <h2 class="section-title">Warkop Rumahan,<br/>Rasa Bintang Lima</h2>
-        <p class="about-text">
-          Warkop Pademangan lahir dari kecintaan mendalam terhadap kopi dan kehangatan
-          komunitas. Sejak 2026, kami menyajikan kopi berkualitas dengan harga yang
-          bersahabat di jantung Pademangan, Jakarta Utara.
-        </p>
-        <p class="about-text">
-          Dari biji kopi yang dipilih langsung dari petani lokal, hingga tangan-tangan
-          barista terampil kami — setiap cangkir adalah cerita yang ingin kami bagikan
-          bersama Anda.
-        </p>
-        <div class="about-features">
-          <div class="about-feature">
-            <div class="about-feature-icon" aria-hidden="true">🌱</div>
-            <div class="about-feature-text">
-              <strong>Biji Kopi Lokal Pilihan</strong>
-              <span>Langsung dari petani Aceh, Toraja &amp; Flores</span>
-            </div>
-          </div>
-          <div class="about-feature">
-            <div class="about-feature-icon" aria-hidden="true">👨‍🍳</div>
-            <div class="about-feature-text">
-              <strong>Barista Berpengalaman</strong>
-              <span>Terlatih dengan standar specialty coffee</span>
-            </div>
-          </div>
-          <div class="about-feature">
-            <div class="about-feature-icon" aria-hidden="true">🏠</div>
-            <div class="about-feature-text">
-              <strong>Suasana Nyaman &amp; Homey</strong>
-              <span>Cocok untuk ngobrol, kerja, dan santai</span>
-            </div>
-          </div>
+  <body>
+    <!-- ========================================
+         PRELOADER
+    ========================================= -->
+    <div id="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-cup" aria-hidden="true">☕</div>
+
+        <div class="preloader-text">Warkop Pademangan</div>
+
+        <div class="preloader-bar">
+          <div class="preloader-fill"></div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ===== MENU ===== -->
-  <section id="menu" aria-label="Daftar menu">
-    <div class="container">
-      <div class="menu-header">
-        <p class="about-label">Menu Kami</p>
-        <h2 class="section-title">Pilihan Menu Favorit</h2>
-        <p class="section-sub">Dari kopi klasik hingga minuman segar &amp; camilan — semua tersedia</p>
-        <div class="filter-btns" role="group" aria-label="Filter kategori menu">
-          <button class="filter-btn active" data-filter="all">Semua</button>
-          <button class="filter-btn" data-filter="kopi">Kopi</button>
-          <button class="filter-btn" data-filter="nonkopi">Non-Kopi</button>
-          <button class="filter-btn" data-filter="makanan">Makanan</button>
-        </div>
-      </div>
-      <div class="menu-grid" id="menu-grid" role="list" aria-label="Daftar produk menu">
-        <!-- Diisi oleh JavaScript (menu.js) -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROMO SECTION ===== -->
-  <section id="promo" aria-label="Promo dan penawaran">
-    <div class="container">
-      <div class="promo-header">
-        <p class="about-label">Penawaran Spesial</p>
-        <h2 class="section-title">Promo Pilihan Minggu Ini</h2>
-        <p class="section-sub">Jangan sampai ketinggalan penawaran terbatas ini!</p>
-      </div>
-      <div class="promo-grid">
-        <div class="promo-card promo-card--big">
-          <div class="promo-card-img">
-            <img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&auto=format&fit=crop&q=80" alt="Promo Kopi Susu" loading="lazy"/>
-          </div>
-          <div class="promo-card-body">
-            <span class="promo-tag">Senin – Rabu</span>
-            <h3>Diskon 20% Kopi Susu</h3>
-            <p>Nikmati kopi susu favorit dengan harga spesial setiap awal minggu. Berlaku untuk dine-in dan take away.</p>
-            <div class="promo-price">
-              <span class="price-old">Rp 13.000</span>
-              <span class="price-new">Rp 10.400</span>
-            </div>
-            <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
-          </div>
-        </div>
-        <div class="promo-card">
-          <div class="promo-card-img">
-            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&auto=format&fit=crop&q=80" alt="Promo Roti Bakar" loading="lazy"/>
-          </div>
-          <div class="promo-card-body">
-            <span class="promo-tag">Setiap Hari</span>
-            <h3>Buy 2 Get 1 Roti Bakar</h3>
-            <p>Beli 2 roti bakar, dapat 1 gratis. Cocok untuk sarapan bareng teman.</p>
-            <a href="#menu" class="btn btn-outline-dark">Lihat Menu</a>
-          </div>
-        </div>
-        <div class="promo-card">
-          <div class="promo-card-img">
-            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&auto=format&fit=crop&q=80" alt="Promo Paket Hemat" loading="lazy"/>
-          </div>
-          <div class="promo-card-body">
-            <span class="promo-tag">Paket Hemat</span>
-            <h3>Mie Goreng + Kopi Rp 27.000</h3>
-            <p>Hemat Rp 3.000 dengan paket kombo mie goreng jumbo dan kopi hitam pilihan.</p>
-            <a href="#menu" class="btn btn-outline-dark">Lihat Menu</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIAL ===== -->
-  <section id="testimonial" aria-label="Testimoni pelanggan">
-    <div class="container">
-      <div class="testi-header">
-        <p class="about-label">Kata Mereka</p>
-        <h2 class="section-title">Cerita dari Pelanggan Setia</h2>
-        <p class="section-sub">Ribuan cangkir sudah kami sajikan, ini cerita mereka</p>
-      </div>
-      <div class="testi-grid" id="testi-grid">
-        <!-- Diisi JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" aria-label="Hubungi kami">
-    <div class="container">
-      <div class="contact-header">
-        <p class="about-label">Hubungi Kami</p>
-        <h2 class="section-title">Temukan &amp; Hubungi Kami</h2>
-        <p class="section-sub">Kami selalu senang mendengar dari Anda</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-card">
-            <div class="contact-icon" aria-hidden="true">📍</div>
-            <h4>Alamat</h4>
-            <p>Jl. Budimulia No. 1,<br/>Pademangan, Jakarta Utara 14420</p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon" aria-hidden="true">⏰</div>
-            <h4>Jam Operasional</h4>
-            <p>Senin – Jumat: 06.00 – 23.00<br/>Sabtu – Minggu: 07.00 – 24.00</p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon" aria-hidden="true">📞</div>
-            <h4>Telepon / WhatsApp</h4>
-            <p><a href="tel:+6281234567890">+62 812-3456-7890</a></p>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon" aria-hidden="true">✉️</div>
-            <h4>Email</h4>
-            <p><a href="mailto:halo@warkoppademangan.id">halo@warkoppademangan.id</a></p>
-          </div>
-        </div>
-        <form class="contact-form" id="contact-form" novalidate>
-          <h3>Kirim Pesan</h3>
-          <div class="form-group">
-            <label for="nama">Nama Lengkap</label>
-            <input type="text" id="nama" name="nama" placeholder="Nama kamu..." required autocomplete="name"/>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="email@kamu.com" required autocomplete="email"/>
-          </div>
-          <div class="form-group">
-            <label for="telp">No. WhatsApp (opsional)</label>
-            <input type="tel" id="telp" name="telp" placeholder="08xx-xxxx-xxxx" autocomplete="tel"/>
-          </div>
-          <div class="form-group">
-            <label for="pesan">Pesan</label>
-            <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Kirim Pesan ✉️
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer id="footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#hero" class="logo footer-logo">
+    <!-- ========================================
+         NAVBAR
+    ========================================= -->
+    <nav id="navbar" role="navigation" aria-label="Navigasi utama">
+      <div class="container nav-inner">
+        <a
+          href="#hero"
+          class="logo"
+          aria-label="Warkop Pademangan - halaman utama"
+        >
           Warkop <span>Pademangan</span>
         </a>
-        <p class="footer-desc">
-          Kopi sejati untuk jiwa yang hangat. Hadir sejak 2014
-          melayani para pecinta kopi Pademangan dan sekitarnya.
-        </p>
-        <div class="social-links" aria-label="Media sosial">
-          <a href="#" aria-label="Instagram kami" class="social-btn">📸</a>
-          <a href="#" aria-label="Facebook kami" class="social-btn">📘</a>
-          <a href="https://wa.me/6281234567890" aria-label="WhatsApp kami" class="social-btn">💬</a>
-          <a href="#" aria-label="TikTok kami" class="social-btn">🎵</a>
+
+        <ul class="nav-links" id="nav-links" role="menubar">
+          <li role="none">
+            <a href="#hero" role="menuitem"> Home </a>
+          </li>
+
+          <li role="none">
+            <a href="#about" role="menuitem"> About </a>
+          </li>
+
+          <li role="none">
+            <a href="#menu" role="menuitem"> Menu </a>
+          </li>
+
+          <li role="none">
+            <a href="#promo" role="menuitem"> Promo </a>
+          </li>
+
+          <li role="none">
+            <a href="#contact" role="menuitem"> Contact </a>
+          </li>
+        </ul>
+
+        <div class="nav-right">
+          <button
+            type="button"
+            id="cart-btn"
+            aria-label="Buka keranjang belanja"
+          >
+            🛒 Keranjang
+
+            <span
+              id="cart-count"
+              style="display: none"
+              aria-label="Jumlah item di keranjang"
+            >
+              0
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle menu navigasi"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Navigasi</h4>
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#promo">Promo</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
+    </nav>
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+    <section id="hero" aria-label="Warkop Pademangan">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Warkop Pademangan</div>
+
+          <h1 class="hero-title">
+            Setiap Tegukan
+            <span>Menghangatkan</span>
+            Jiwa
+          </h1>
+
+          <p class="hero-desc">
+            Nikmati cita rasa kopi pilihan dengan suasana hangat khas warkop.
+            Dari robusta pekat hingga latte lembut — semua ada di sini, harga
+            kawan.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#menu" class="btn btn-primary"> ☕ Pesan Sekarang </a>
+
+            <a href="#about" class="btn btn-outline"> Tentang Kami </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">12+</div>
+
+              <div class="stat-label">Varian Menu</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num">500+</div>
+
+              <div class="stat-label">Pelanggan/Hari</div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-num">2026</div>
+
+              <div class="stat-label">Tahun Berdiri</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=80"
+            alt="Secangkir kopi"
+            width="380"
+            height="380"
+            fetchpriority="high"
+          />
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Kategori Menu</h4>
-        <ul>
-          <li><a href="#menu">Kopi Hitam</a></li>
-          <li><a href="#menu">Kopi Susu</a></li>
-          <li><a href="#menu">Minuman Dingin</a></li>
-          <li><a href="#menu">Camilan &amp; Makanan</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Jam Buka</h4>
-        <ul class="hours-list">
-          <li><span>Senin – Jumat</span><span>06.00 – 23.00</span></li>
-          <li><span>Sabtu</span><span>07.00 – 24.00</span></li>
-          <li><span>Minggu</span><span>07.00 – 24.00</span></li>
-        </ul>
-        <div class="footer-open-status" id="open-status"></div>
+    </section>
+
+    <!-- ========================================
+         PROMO BANNER
+    ========================================= -->
+    <div id="promo-banner" aria-label="Promo hari ini" role="marquee">
+      <div class="promo-track">
+        <span> 🔥 Promo Hari Ini </span>
+
+        <span> ☕ Kopi Hitam Rp 8.000 </span>
+
+        <span> 🎉 Buy 2 Get 1 Roti Bakar </span>
+
+        <span> ⭐ Diskon 20% Kopi Susu Senin-Rabu </span>
+
+        <span> 🍜 Mie Goreng + Kopi Cuma Rp 27.000 </span>
+
+        <span> 📱 Follow IG kami untuk promo eksklusif </span>
       </div>
     </div>
-    <div class="footer-bottom">
+
+    <!-- ========================================
+         ABOUT
+    ========================================= -->
+    <section id="about" aria-label="Tentang kami">
+      <div class="container about-grid">
+        <div class="about-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&auto=format&fit=crop&q=80"
+            alt="Suasana Warkop Pademangan"
+            loading="lazy"
+            width="700"
+            height="480"
+          />
+
+          <div class="about-badge-img">
+            <strong>2026</strong>
+            <span>Berdiri</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="about-label">Tentang Kami</p>
+
+          <h2 class="section-title">
+            Warkop Rumahan,
+            <br />
+            Rasa Bintang Lima
+          </h2>
+
+          <p class="about-text">
+            Warkop Pademangan lahir dari kecintaan terhadap kopi dan kehangatan
+            komunitas. Sejak 2026, kami menyajikan kopi berkualitas dengan harga
+            yang bersahabat di Pademangan, Jakarta Utara.
+          </p>
+
+          <p class="about-text">
+            Dari biji kopi yang dipilih langsung dari petani lokal hingga
+            tangan-tangan barista terampil kami — setiap cangkir adalah cerita
+            yang ingin kami bagikan bersama Anda.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">🌱</div>
+
+              <div class="about-feature-text">
+                <strong> Biji Kopi Lokal Pilihan </strong>
+
+                <span> Langsung dari petani Aceh, Toraja &amp; Flores </span>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">👨‍🍳</div>
+
+              <div class="about-feature-text">
+                <strong> Barista Berpengalaman </strong>
+
+                <span> Terlatih dengan standar specialty coffee </span>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="about-feature-icon" aria-hidden="true">🏠</div>
+
+              <div class="about-feature-text">
+                <strong> Suasana Nyaman &amp; Homey </strong>
+
+                <span> Cocok untuk ngobrol, kerja, dan santai </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         MENU
+    ========================================= -->
+    <section id="menu" aria-label="Daftar menu">
       <div class="container">
-        <p>© 2026 Warkop Pademangan. Dibuat dengan ☕ dan ❤️ di Jakarta Utara.</p>
-      </div>
-    </div>
-  </footer>
+        <div class="menu-header">
+          <p class="about-label">Menu Kami</p>
 
-  <!-- ===== CART OVERLAY & SIDEBAR ===== -->
-  <div id="cart-overlay" aria-hidden="true"></div>
-  <aside id="cart-sidebar" aria-label="Keranjang belanja" role="dialog" aria-modal="true">
-    <div class="cart-header">
-      <h3>🛒 Keranjang Belanja</h3>
-      <button class="cart-close" id="cart-close" aria-label="Tutup keranjang">✕</button>
-    </div>
-    <div class="cart-items" id="cart-items">
-      <div class="cart-empty">
-        <div class="cart-empty-icon" aria-hidden="true">☕</div>
-        <p>Keranjangmu masih kosong.<br/>Yuk pilih menu favoritmu!</p>
-      </div>
-    </div>
-    <div class="cart-footer" id="cart-footer" style="display:none;">
-      <div class="cart-total">
-        <span>Subtotal</span>
-        <div class="cart-total-price" id="cart-total">Rp 0</div>
-      </div>
-      <p class="cart-note">* Harga belum termasuk ongkos kirim</p>
-      <button id="checkout-btn">Checkout Sekarang 🚀</button>
-    </div>
-  </aside>
+          <h2 class="section-title">Pilihan Menu Favorit</h2>
 
-  <!-- ===== TOAST ===== -->
-  <div id="toast" role="status" aria-live="polite">
-    <span class="toast-icon" aria-hidden="true"></span>
-    <span class="toast-msg"></span>
-  </div>
+          <p class="section-sub">
+            Dari kopi klasik hingga minuman segar &amp; camilan — semua tersedia
+          </p>
 
-  <!--
-    URUTAN JS WAJIB:
-    1. utils.js      — formatRupiah, throttle, debounce (global helpers)
-    2. data.js       — menuItems array
-    3. menu.js       — renderMenuCards() pakai menuItems + addToCart
-    4. cart.js       — addToCart() pakai showToast dari main.js (hoisted)
-    5. main.js       — showToast (global), semua init, scroll anim via window load
-    6. testimonial.js— renderTestimonials() di DOMContentLoaded (sebelum window load)
-    7. open-status.js— status buka/tutup real-time
-  -->
-  <script src="js/utils.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/cart.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/testimonial.js"></script>
-  <script src="js/open-status.js"></script>
-</body>
+          <div
+            class="filter-btns"
+            role="group"
+            aria-label="Filter kategori menu"
+          >
+            <button type="button" class="filter-btn active" data-filter="all">
+              Semua
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="kopi">
+              Kopi
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="nonkopi">
+              Non-Kopi
+            </button>
+
+            <button type="button" class="filter-btn" data-filter="makanan">
+              Makanan
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="menu-grid"
+          id="menu-grid"
+          role="list"
+          aria-label="Daftar produk menu"
+        >
+          <!--
+            Diisi otomatis oleh menu.js
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         PROMO SECTION
+    ========================================= -->
+    <section id="promo" aria-label="Promo dan penawaran">
+      <div class="container">
+        <div class="promo-header">
+          <p class="about-label">Penawaran Spesial</p>
+
+          <h2 class="section-title">Promo Pilihan Minggu Ini</h2>
+
+          <p class="section-sub">
+            Jangan sampai ketinggalan penawaran terbatas ini!
+          </p>
+        </div>
+
+        <div class="promo-grid">
+          <!-- PROMO 1 -->
+          <div class="promo-card promo-card--big">
+            <div class="promo-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&auto=format&fit=crop&q=80"
+                alt="Promo kopi susu"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+            </div>
+
+            <div class="promo-card-body">
+              <span class="promo-tag"> Senin – Rabu </span>
+
+              <h3>Diskon 20% Kopi Susu</h3>
+
+              <p>
+                Nikmati kopi susu favorit dengan harga spesial setiap awal
+                minggu. Berlaku untuk dine-in dan take away.
+              </p>
+
+              <div class="promo-price">
+                <span class="price-old"> Rp 13.000 </span>
+
+                <span class="price-new"> Rp 10.400 </span>
+              </div>
+
+              <a href="#menu" class="btn btn-primary"> Pesan Sekarang </a>
+            </div>
+          </div>
+
+          <!-- PROMO 2 -->
+          <div class="promo-card">
+            <div class="promo-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&auto=format&fit=crop&q=80"
+                alt="Promo roti bakar"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </div>
+
+            <div class="promo-card-body">
+              <span class="promo-tag"> Setiap Hari </span>
+
+              <h3>Buy 2 Get 1 Roti Bakar</h3>
+
+              <p>
+                Beli 2 roti bakar, dapat 1 gratis. Cocok untuk sarapan bareng
+                teman.
+              </p>
+
+              <a href="#menu" class="btn btn-outline-dark"> Lihat Menu </a>
+            </div>
+          </div>
+
+          <!-- PROMO 3 -->
+          <div class="promo-card">
+            <div class="promo-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400&auto=format&fit=crop&q=80"
+                alt="Promo paket hemat mie goreng dan kopi"
+                loading="lazy"
+                width="400"
+                height="300"
+              />
+            </div>
+
+            <div class="promo-card-body">
+              <span class="promo-tag"> Paket Hemat </span>
+
+              <h3>Mie Goreng + Kopi Rp 27.000</h3>
+
+              <p>
+                Hemat Rp 3.000 dengan paket kombo mie goreng jumbo dan kopi
+                hitam pilihan.
+              </p>
+
+              <a href="#menu" class="btn btn-outline-dark"> Lihat Menu </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIAL
+    ========================================= -->
+    <section id="testimonial" aria-label="Testimoni pelanggan">
+      <div class="container">
+        <div class="testi-header">
+          <p class="about-label">Kata Mereka</p>
+
+          <h2 class="section-title">Cerita dari Pelanggan Setia</h2>
+
+          <p class="section-sub">
+            Cerita dan pengalaman pelanggan Warkop Pademangan
+          </p>
+        </div>
+
+        <div class="testi-grid" id="testi-grid">
+          <!--
+            Diisi otomatis oleh testimonial.js
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT
+    ========================================= -->
+    <section id="contact" aria-label="Hubungi kami">
+      <div class="container">
+        <div class="contact-header">
+          <p class="about-label">Hubungi Kami</p>
+
+          <h2 class="section-title">Temukan &amp; Hubungi Kami</h2>
+
+          <p class="section-sub">Kami selalu senang mendengar dari Anda</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- CONTACT INFO -->
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+
+              <h4>Alamat</h4>
+
+              <p>
+                Jl. Budimulia No. 1,
+                <br />
+                Pademangan, Jakarta Utara 14420
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon" aria-hidden="true">⏰</div>
+
+              <h4>Jam Operasional</h4>
+
+              <p>
+                Senin – Jumat: 06.00 – 23.00
+                <br />
+                Sabtu – Minggu: 07.00 – 24.00
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+
+              <h4>Telepon / WhatsApp</h4>
+
+              <p>
+                <a href="tel:+6281234567890"> +62 812-3456-7890 </a>
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+
+              <h4>Email</h4>
+
+              <p>
+                <a href="mailto:halo@warkoppademangan.id">
+                  halo@warkoppademangan.id
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3>Kirim Pesan</h3>
+
+            <div class="form-group">
+              <label for="nama"> Nama Lengkap </label>
+
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Nama kamu..."
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Email </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@kamu.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telp"> No. WhatsApp (opsional) </label>
+
+              <input
+                type="tel"
+                id="telp"
+                name="telp"
+                placeholder="08xx-xxxx-xxxx"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="pesan"> Pesan </label>
+
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                placeholder="Tulis pesanmu di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Kirim Pesan ✉️
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer id="footer" role="contentinfo">
+      <div class="container footer-grid">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo footer-logo">
+            Warkop <span>Pademangan</span>
+          </a>
+
+          <p class="footer-desc">
+            Kopi sejati untuk jiwa yang hangat. Hadir sejak 2026 untuk melayani
+            para pecinta kopi Pademangan dan sekitarnya.
+          </p>
+
+          <div class="social-links" aria-label="Media sosial">
+            <a href="#" aria-label="Instagram kami" class="social-btn"> 📸 </a>
+
+            <a href="#" aria-label="Facebook kami" class="social-btn"> 📘 </a>
+
+            <a
+              href="https://wa.me/6281234567890"
+              aria-label="WhatsApp kami"
+              class="social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💬
+            </a>
+
+            <a href="#" aria-label="TikTok kami" class="social-btn"> 🎵 </a>
+          </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+
+          <ul>
+            <li>
+              <a href="#hero"> Home </a>
+            </li>
+
+            <li>
+              <a href="#about"> Tentang Kami </a>
+            </li>
+
+            <li>
+              <a href="#menu"> Menu </a>
+            </li>
+
+            <li>
+              <a href="#promo"> Promo </a>
+            </li>
+
+            <li>
+              <a href="#contact"> Kontak </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MENU CATEGORY -->
+        <div class="footer-col">
+          <h4>Kategori Menu</h4>
+
+          <ul>
+            <li>
+              <a href="#menu"> Kopi Hitam </a>
+            </li>
+
+            <li>
+              <a href="#menu"> Kopi Susu </a>
+            </li>
+
+            <li>
+              <a href="#menu"> Minuman Dingin </a>
+            </li>
+
+            <li>
+              <a href="#menu"> Camilan &amp; Makanan </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- OPENING HOURS -->
+        <div class="footer-col">
+          <h4>Jam Buka</h4>
+
+          <ul class="hours-list">
+            <li>
+              <span> Senin – Jumat </span>
+
+              <span> 06.00 – 23.00 </span>
+            </li>
+
+            <li>
+              <span> Sabtu </span>
+
+              <span> 07.00 – 24.00 </span>
+            </li>
+
+            <li>
+              <span> Minggu </span>
+
+              <span> 07.00 – 24.00 </span>
+            </li>
+          </ul>
+
+          <div
+            class="footer-open-status"
+            id="open-status"
+            aria-live="polite"
+          ></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © 2026 Warkop Pademangan. Dibuat dengan ☕ dan ❤️ di Jakarta Utara.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================
+         CART OVERLAY
+    ========================================= -->
+    <div id="cart-overlay" aria-hidden="true"></div>
+
+    <!-- ========================================
+         CART SIDEBAR
+    ========================================= -->
+    <aside
+      id="cart-sidebar"
+      aria-label="Keranjang belanja"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="cart-header">
+        <h3>🛒 Keranjang Belanja</h3>
+
+        <button
+          type="button"
+          class="cart-close"
+          id="cart-close"
+          aria-label="Tutup keranjang"
+        >
+          ✕
+        </button>
+      </div>
+
+      <!-- CART ITEMS -->
+      <div class="cart-items" id="cart-items">
+        <div class="cart-empty">
+          <div class="cart-empty-icon" aria-hidden="true">☕</div>
+
+          <p>
+            Keranjangmu masih kosong.
+            <br />
+            Yuk pilih menu favoritmu!
+          </p>
+        </div>
+      </div>
+
+      <!-- ========================================
+     CHECKOUT FORM
+========================================= -->
+      <div
+        class="form-container"
+        id="checkout-form-container"
+        style="display: none"
+      >
+        <form id="checkoutForm">
+          <div class="checkout-form-header">
+            <button
+              type="button"
+              id="back-to-cart"
+              class="back-to-cart"
+              aria-label="Kembali ke pesanan"
+            >
+              ←
+            </button>
+
+            <h3>Formulir Checkout</h3>
+          </div>
+
+          <div class="form-group">
+            <label for="customerName"> Nama Pelanggan </label>
+
+            <input
+              type="text"
+              id="customerName"
+              name="customerName"
+              placeholder="Nama lengkap"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="customerPhone"> No. Telepon / WhatsApp </label>
+
+            <input
+              type="tel"
+              id="customerPhone"
+              name="customerPhone"
+              placeholder="08xx-xxxx-xxxx"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="customerAddress"> Alamat Pengiriman </label>
+
+            <textarea
+              id="customerAddress"
+              name="customerAddress"
+              rows="4"
+              placeholder="Alamat lengkap untuk pengiriman"
+              required
+              autocomplete="street-address"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+        </form>
+      </div>
+
+      <!-- ========================================
+           CART FOOTER
+      ========================================= -->
+      <div class="cart-footer" id="cart-footer" style="display: none">
+        <div class="cart-total">
+          <span> Subtotal </span>
+
+          <div class="cart-total-price" id="cart-total">Rp 0</div>
+        </div>
+
+        <p class="cart-note">* Harga belum termasuk ongkos kirim</p>
+
+        <button type="button" id="checkout-btn">Checkout Sekarang 🚀</button>
+      </div>
+    </aside>
+
+    <!-- ========================================
+         TOAST
+    ========================================= -->
+    <div id="toast" role="status" aria-live="polite">
+      <span class="toast-icon" aria-hidden="true"></span>
+
+      <span class="toast-msg"></span>
+    </div>
+
+    <!-- ========================================
+         JAVASCRIPT
+         
+         URUTAN:
+         1. utils.js
+         2. data.js
+         3. menu.js
+         4. cart.js
+         5. main.js
+         6. testimonial.js
+         7. open-status.js
+    ========================================= -->
+
+    <script src="js/utils.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testimonial.js"></script>
+    <script src="js/open-status.js"></script>
+  </body>
 </html>

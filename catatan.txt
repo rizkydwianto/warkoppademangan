@@ -1,0 +1,7 @@
+menambah menu ada di js/data.js
+
+
+link transaksi di midtrans:
+
+https://dashboard.sandbox.midtrans.com/dashboard
+
